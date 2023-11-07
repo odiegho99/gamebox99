@@ -1,0 +1,32 @@
+ /* CSS code for the Tic Tac Toe game */
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            cursor: pointer;
+        }
+
+        .cell:hover {
+            background-color: gray;
+        }
+
+        .cell.x {
+            color: blue;
+        }
+
+        .cell.o {
+            color: red;
+        }
+
